@@ -46,28 +46,24 @@ module.exports = {
             },
             {
                 name: "Projects",
-                url: "/#projects",
+                url: "/projects",
             },
             {
                 name: "About Me",
-                url: "/#about",
+                url: "/about",
             },
 
         ],
         button: {
             name: "Contact",
-            url: "/#contact",
+            url: "/contact",
         }
     },
 
     footerLinks: [
         {
-            name: "Privacy",
-            url: "/privacy"
+            name: "Made with ♥️ & a lot of ☕️",
+            url: "/"
         },
-        {
-            name: "Imprint",
-            url: "/imprint"
-        }
     ]
 }

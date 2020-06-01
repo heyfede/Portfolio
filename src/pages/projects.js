@@ -14,8 +14,7 @@ import { splashScreen } from "../config"
 
 const IndexPage = ({ data }) => (
   <Layout splashScreen={splashScreen}>
-    <SEO title="Federico Sarassola - Designer" />
-    <Hero content={data.hero.edges} />
+    <Projects content={data.projects.edges} />
   </Layout>
 )
 
