@@ -1,10 +1,10 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
-    siteTitle: "Gatsby Starter Portfolio Minimal",
-    siteShortTitle: "Gatsby", // Used as logo text in header, footer, and splash screen
-    siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
-    siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
+    author: "@heyfede",
+    siteTitle: "Federico Sarassola - Designer",
+    siteShortTitle: "Heyfede", // Used as logo text in header, footer, and splash screen
+    siteDescription: "A porfolio for a UX UI Designer",
+    siteUrl: "https://heyfede.netlify.app/",
     siteLanguage: "en_US",
     siteIcon: "src/content/favicon.png", // Relative to gatsby-config file
 
@@ -19,37 +19,40 @@ module.exports = {
     // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
-            name: "Linkedin",
-            url: "https://www.linkedin.com/in/konstantin-muenster/"
-        },
-        {
-            name: "Medium",
-            url: "https://medium.com/@konstantin.muenster"
-        },
-        {
-            name: "Github",
-            url: "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal"
+            name: "Dribbble",
+            url: "https://dribbble.com/heyfede"
         },
         {
             name: "Behance",
-            url: "https://www.behance.net/konstanmnster"
+            url: "https://www.behance.net/heyfede"
         },
+        {
+            name: "Medium",
+            url: "https://medium.com/@heyfede"
+        },
+        {
+            name: "Linkedin",
+            url: "https://www.linkedin.com/in/fsarassola/"
+        },
+
+
     ],
   
     navLinks: {
         menu: [
             {
-                name: "Articles",
-                url: "/#articles",
+                name: "Home",
+                url: "/",
+            },
+            {
+                name: "Projects",
+                url: "/#projects",
             },
             {
                 name: "About Me",
                 url: "/#about",
             },
-            {
-                name: "Features",
-                url: "/#projects",
-            },
+
         ],
         button: {
             name: "Contact",
