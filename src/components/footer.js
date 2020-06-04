@@ -46,7 +46,6 @@ const Footer = () => (
   <StyledFooter>
     <StyledContentWrapper>
       <Link to="/" aria-label="home">
-        <Logo color="white" size="1.5rem" />
       </Link>
       <div className="footer-links">
         {footerLinks.map(({ name, url }, key) => (
