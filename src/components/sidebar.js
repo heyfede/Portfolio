@@ -44,7 +44,7 @@ const StyledNav = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: ${({ theme }) => theme.colors.background};
+  background: ${({ theme }) => theme.colors.terciary};
   height: 100vh;
   width: 55%;
   text-align: left;
