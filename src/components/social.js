@@ -20,13 +20,12 @@ const StyledSocialWrapper = styled.div`
   padding-right: 2.5rem;
 
   overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
   -webkit-scrollbar {
     display: none;
     -webkit-appearance: none;
   }
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-
 
   /* Workaround: https://stackoverflow.com/questions/38993170/last-margin-padding-collapsing-in-flexbox-grid-layout */
   &::after {
@@ -37,7 +36,7 @@ const StyledSocialWrapper = styled.div`
   /* Show scrollbar if desktop and wrapper width > viewport width */
   @media (hover: hover) {
     &::-webkit-scrollbar {
-      display: block;
+      display: none;
       -webkit-appearance: none;
     }
 
@@ -70,13 +69,7 @@ const StyledSocialProfile = styled.a`
   width: ${({ width }) => (width ? width : "auto")};
   height: auto;
   background: ${({ theme }) => theme.colors.background};
-  background: linear-gradient(
-    to right,
-    ${({ theme }) => theme.colors.primary} 50%,
-    ${({ theme }) => theme.colors.background} 50%
-  );
-  background-size: 205% 100%;
-  background-position: right bottom;
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1.0);
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0.125rem solid ${({ theme }) => theme.colors.primary};
   padding: ${({ padding }) => (padding ? padding : ".3rem 1.25rem")};
@@ -84,18 +77,9 @@ const StyledSocialProfile = styled.a`
   font-weight: 500;
   color: ${({ theme }) => theme.colors.primary};
   &:hover {
-    background-position: left bottom;
-    color: #ffffff;
-  }
-  &:hover svg {
-    /* Change svg color to white */
-    filter: brightness(0) invert(1);
-  }
-  svg {
-    height: 1rem;
-    width: 1rem;
-    margin-right: 0.5rem;
-    margin-bottom: -0.05rem;
+    background: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.background};
+    transform: translateY(2px);
   }
 `
 
@@ -114,7 +98,7 @@ const Social = ({ width, padding, fontSize, fontWeight, withIcon }) => (
           fontSize={fontSize}
           fontWeight={fontWeight}
         >
-          {withIcon ? <Icon name={name} /> : null} {name}
+          {name}
         </StyledSocialProfile>
       )
     })}

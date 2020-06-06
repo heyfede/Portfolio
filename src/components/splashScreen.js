@@ -16,7 +16,7 @@ const StyledSplashScreen = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
   .logo-wrapper {
       position: relative;
       display: flex;
@@ -32,7 +32,7 @@ const StyledSplashScreen = styled(motion.div)`
       z-index: 1000;
       width: 100%;
       height: 100%;
-      background-color: ${({ theme }) => theme.colors.primary};
+      background-color: ${({ theme }) => theme.colors.background};
   }
 `
 
