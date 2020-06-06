@@ -19,7 +19,7 @@ module.exports = {
     // Medium, GitHub, LinkedIn, XING, Behance
     socialMedia: [
         {
-            name: "Github",
+            name: "Dribbble",
             url: "https://dribbble.com/heyfede"
         },
         {

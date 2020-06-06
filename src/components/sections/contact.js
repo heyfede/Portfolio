@@ -44,7 +44,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       .avatar {
         width: 100%;
         max-width: 8.75rem;
-        border-radius: 50%;
+        border-radius: 25%;
         margin-right: 4rem;
         margin-bottom: 2rem;
         @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
@@ -87,7 +87,7 @@ const Contact = ({ content }) => {
             </a>
           </div>
         </div>
-        <Social width="9rem" padding="0.5rem 1.25rem" withIcon />
+        <Social width="9rem" padding="0.5rem 1.25rem" />
       </StyledContentWrapper>
     </StyledSection>
   )
