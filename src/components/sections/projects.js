@@ -314,7 +314,7 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <Icon name="external" color="#888888" />
+                          <Icon name="external" color="#ffffff" />
                         </a>
                       )}
                     </div>

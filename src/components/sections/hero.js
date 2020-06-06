@@ -127,6 +127,7 @@ const Hero = ({ content }) => {
         </motion.div>
           {/* Esto es la animacion de entrada */}
         <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
+          
           {/* Estos son los botones de las redes 
           <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" />*/}
         </motion.div>
