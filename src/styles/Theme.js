@@ -1,7 +1,7 @@
 module.exports = {
   colors: {
     primary: "#ffffff",
-    secondary: "#5A0182",
+    secondary: "#A0AEEE",
     tertiary: "#F2F2F2",
     text: "#ffffff",
     background: "#151929",
@@ -18,5 +18,5 @@ module.exports = {
   borderRadius: "8px",
   pageWidth: "62.5rem",
   headerHeight: "6.25rem",
-  footerHeight: "7.5rem",
+  footerHeight: "4rem",
 }

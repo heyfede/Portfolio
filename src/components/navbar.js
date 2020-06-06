@@ -26,11 +26,11 @@ const StyledNav = styled.nav`
     margin: 0 0 0 1.25rem;
     padding: 0;
     &::before {
-      transition: 200ms ease-out;
+      transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0);
       height: 0.1563rem;
       content: "";
       position: absolute;
-      background-color: ${({ theme }) => theme.colors.primary};
+      background-color: ${({ theme }) => theme.colors.secondary};
       width: 0%;
       bottom: -0.125rem;
     }
@@ -45,13 +45,15 @@ const StyledNav = styled.nav`
     border-radius: ${({ theme }) => theme.borderRadius};
     border: 0.125rem solid ${({ theme }) => theme.colors.primary};
     background: ${({ theme }) => theme.colors.background};
-    transition: 20ms ease-out;
     font-size: 1rem;
     padding: 0.5rem 1.5rem;
     margin: 0;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.0);
     &:hover {
-      background: ${({ theme }) => theme.colors.primary};
-      color: #ffffff;
+      background: ${({ theme }) => theme.colors.secondary};
+      color: ${({ theme }) => theme.colors.background};
+      transform: translateY(-3px);
+      box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.5);
     }
   }
 `

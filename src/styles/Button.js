@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   width: 15.625rem;
   height: 3rem;
   background-color: ${({ theme, color }) => theme.colors[color] || "black"};
-  color: #5A0182;
+  color: #151929;
   padding: 1rem;
   margin: 0 ${({ center }) => center ? "auto" : "0"};
   font-size: 0.875rem;
@@ -21,6 +21,8 @@ const StyledButton = styled.button`
   &:active {
     cursor: pointer;
     outline: none;
+    font-weight: 700;
+    background-color: #f4f4f4;
   }
   svg {
     height: 1rem;

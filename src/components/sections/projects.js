@@ -69,7 +69,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
       /* Show scrollbar if desktop and wrapper width > viewport width */
       @media (hover: hover) {
         &::-webkit-scrollbar {
-          display: block;
+          display: none;
           -webkit-appearance: none;
         }
 

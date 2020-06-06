@@ -54,7 +54,7 @@ const StyledInterests = styled.div`
   padding: 0 2.5rem;
   overflow-x: scroll;
   overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: hidden;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -73,7 +73,7 @@ const StyledInterests = styled.div`
   /* Show scrollbar if desktop and wrapper width > viewport width */
   @media (hover: hover) {
     &::-webkit-scrollbar {
-      display: block;
+      display: none;
       -webkit-appearance: none;
     }
 
