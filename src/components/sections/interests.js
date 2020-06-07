@@ -13,7 +13,7 @@ const StyledSection = styled.section`
   width: 100%;
   height: auto;
   background: ${({ theme }) => theme.colors.background};
-  margin-top: 6rem;
+  margin-top: 3rem;
 `
 
 const StyledContentWrapper = styled(ContentWrapper)`
@@ -100,7 +100,7 @@ const StyledInterests = styled.div`
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-    border: 0.125rem solid ${({ theme }) => theme.colors.primary};
+    border: 0.125rem solid ${({ theme }) => theme.colors.secondary};
     border-radius: ${({ theme }) => theme.borderRadius};
     .icon {
       margin-right: 0.5rem;

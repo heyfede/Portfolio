@@ -216,7 +216,7 @@ const Projects = ({ content }) => {
     }
   }
   const pVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 1, y: 0 },
     visible: { opacity: 1, y: 0 },
   }
 
@@ -258,9 +258,6 @@ const Projects = ({ content }) => {
           animate={tOnScreen ? "visible" : "hidden"}
         >
           <h3 className="section-title">{sectionDetails.frontmatter.title}</h3>
-          <div className="counter">
-            {visibleProject} / {projects.length}
-          </div>
         </motion.div>
         <div className="projects">
           {projects.map(project => {
