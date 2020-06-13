@@ -301,7 +301,7 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <Icon name="github" color="#888888" />
+                          <Icon name="behance" color="#f4f4f4" />
                         </a>
                       )}
                       {frontmatter.external && (
@@ -311,7 +311,7 @@ const Projects = ({ content }) => {
                           rel="nofollow noopener noreferrer"
                           aria-label="External Link"
                         >
-                          <Icon name="external" color="#ffffff" />
+                          <Icon name="medium" color="#ffffff" />
                         </a>
                       )}
                     </div>
